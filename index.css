@@ -93,31 +93,48 @@ a:hover{
 }
 
 main{
-	margin-right:auto;
-	margin-left:auto;
-	width:35%;
+width:100%;
 }
 form{
-	width:96%;
+	width:40%;
 	margin-right: auto;
 	margin-left: auto;
 }
 form #search-bar{
-	border:2px rgb(150, 26, 26) solid;
-	width:100%;
-	
-	
+	border:2px rgb(218, 214, 214) solid;
+	border-radius:20px;
+	z-index: -1;
+	display:flex;
 }
+#search-bar:hover{
+	box-shadow:0 1px 2px 0px #343434;
+}
+#search-icon{height:60%;opacity:0.85;border-right: 1px rgb(190, 189, 189) solid;}
 #search-input{
 	visibility: visible/*hidden*/;
 	border:0px black solid;
 	width:85%;
 	float:right;
+	height:100%;
+	padding-top:2px;
+}
+#search-input:focus{
+	outline:0px #343434;
 }
 #google-logo{
-	width:96%;
+	display:block;
+	margin:0 auto 6px auto;
+	width: 50%;
 }
-.button{width:48%;
+#buttons{
+	margin-top: 8px;
+	width:100%;
+	display: flex;
+	outline:0px cyan solid;
+	justify-content: space-evenly;
+}
+.button{width:40%;
+		display: block;
 		}
 
 
