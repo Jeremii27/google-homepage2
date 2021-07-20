@@ -47,4 +47,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+body{
+	height:100vh;
+	color:#343434;
+	background-color: white;
+}
