@@ -47,8 +47,78 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/*my styles below*/
+/**{outline:green 1px solid;}*/
+
+
 body{
 	height:100vh;
+	width:100vw;
 	color:#343434;
 	background-color: white;
+	display:grid;
+	grid-template-rows: 1fr 2fr 1fr;
 }
+a{
+	text-decoration: none;
+	color:#343434;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+
+#nav1{
+	/*outline: green 5px solid;*/
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	height:10vh;
+	width:100%;
+}
+#nav1  div{
+	/*outline:5px solid green;*/
+	color: #343434;
+}
+#topnav-section-2{
+	color:#343434;
+	justify-self: right;
+}
+
+
+
+#nav2{
+	background-color: #F2F2F2;
+}
+
+main{
+	margin-right:auto;
+	margin-left:auto;
+	width:35%;
+}
+form{
+	width:96%;
+	margin-right: auto;
+	margin-left: auto;
+}
+form #search-bar{
+	border:2px rgb(150, 26, 26) solid;
+	width:100%;
+	
+	
+}
+#search-input{
+	visibility: visible/*hidden*/;
+	border:0px black solid;
+	width:85%;
+	float:right;
+}
+#google-logo{
+	width:96%;
+}
+.button{width:48%;
+		}
+
+
+
