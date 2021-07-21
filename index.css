@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-family: arial,sans-serif;
 	line-height: 1;
 }
 ol, ul {
@@ -71,22 +72,58 @@ a:hover{
 
 
 #nav1{
-	/*outline: green 5px solid;*/
+	align-items: center;
+	outline: green 0px solid;
 	display:grid;
 	grid-template-columns: 1fr 2fr;
-	height:10vh;
+	height:minmax(30px,8vh);
 	width:100%;
 }
+#topnav-section-1{outline:0px yellow dotted;  display: flex;
+	flex-direction: row;
+	align-items: center;
+margin-left:5%;}
+
+#topnav-section-1 a{padding:0.6em;}
+
 #nav1  div{
+	font-family: arial,sans-serif;
+	font-size:0.6em;
 	/*outline:5px solid green;*/
 	color: #343434;
+	height:100%;
 }
+
 #topnav-section-2{
+	outline: rgb(149, 101, 226) 0px solid;
 	color:#343434;
 	justify-self: right;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: right;
+}
+#topnav-section-2 a{padding:0.6em;}
+#profile-icon{
+	padding:1%;
+	position: relative;
+	border-radius:50%;
+	height:20px;
 }
 
 
+#profile-icon::before{
+	content:'';
+	height:3px;
+	background-color: orange;
+	width:60px;
+	position: absolute;
+	top:10%;
+	left:10%;
+}
+
+
+#app-menu-icon{height:20px;display: inline-block;padding:1%;}
 
 #nav2{
 	background-color: #F2F2F2;
@@ -96,34 +133,40 @@ main{
 width:100%;
 }
 form{
-	width:40%;
+	height:100%;
+	width: 67%;
+	max-width: 650px;
 	margin-right: auto;
 	margin-left: auto;
 }
-form #search-bar{
-	border:2px rgb(218, 214, 214) solid;
+#search-bar{
+	border:1px rgba(209, 216, 219, 0.562) solid;
 	border-radius:20px;
 	z-index: -1;
 	display:flex;
+	height:25px;
+	align-items:center;
 }
 #search-bar:hover{
-	box-shadow:0 1px 2px 0px #343434;
+	box-shadow:0 0.5px 1px 0px #3a3a3a62;
 }
-#search-icon{height:60%;opacity:0.85;border-right: 1px rgb(190, 189, 189) solid;}
+#search-icon{height:16px;opacity:0.85;outline: 0px rgb(190, 189, 189) solid;padding-left:1%;}
 #search-input{
 	visibility: visible/*hidden*/;
 	border:0px black solid;
 	width:85%;
 	float:right;
-	height:100%;
-	padding-top:2px;
+	height:60%;
+	border-radius:20px;
+	font-size: 0.6em;
 }
 #search-input:focus{
 	outline:0px #343434;
 }
 #google-logo{
 	display:block;
-	margin:0 auto 6px auto;
+	margin:0 auto 10px auto;
+	
 	width: 50%;
 }
 #buttons{
@@ -133,9 +176,18 @@ form #search-bar{
 	outline:0px cyan solid;
 	justify-content: space-evenly;
 }
-.button{width:40%;
+.button{width:minmax(fit-content,40%);
 		display: block;
+		outline-color:rgba(128, 128, 128, 0.13);
+		background-color: white;
+		border:none;
+		font-size: 0.74em;
 		}
+@media screen and (min-width: 992px) {
+			form{
 
+				width: 39%;
 
+		  }
+		}
 
